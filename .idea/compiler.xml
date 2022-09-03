@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Rabbit" />
+        <module name="RabbitMQ-Consumer" />
+        <module name="RabbitMQ-Producer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="one" target="1.8" />
+      <module name="Rabbit" target="1.8" />
+      <module name="rabbitMQ" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Rabbit" options="-parameters" />
+      <module name="RabbitMQ-Consumer" options="-parameters" />
+      <module name="RabbitMQ-Producer" options="-parameters" />
+      <module name="one" options="-parameters" />
+      <module name="rabbitMQ" options="" />
+    </option>
+  </component>
+</project>
